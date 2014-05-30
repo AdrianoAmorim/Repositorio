@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: white;
+    background-image: linear-gradient(to bottom, #e8faf1 30%,white);
+}
+/*Configura a Interface geral de tudo div pai*/
+div#interface {
+    width: auto;
+    height: auto;
+    min-width: 1128px;
+    margin: 0 auto 0 auto;
+
+}/* fim div pai*/
+/*configura o conteudo total do site (fora o cabecalho e rodape*/
+div#interface div#centralConteudo {
+    margin: 10px;
+
+}/*fim do conteudo total*/
+
+/*Formatação do cabeçalho*/
+header#hCabecalho div#cabecalho {
+    background-image: linear-gradient(to bottom,#5da83f,green 50%);
+    background-color: green;
+    box-shadow: 0px 3px 5px black;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 14%;
+    width: auto;
+    height: 70px;
+    margin: 0px auto 15px auto;
+}/*FIm formatação cabeçalho*/
+
+/*Botao cadastrar*/
+header#hCabecalho div#cabecalho div#btnCadastrar {
+    display: block;
+    float: right;
+    padding: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+header#hCabecalho div#cabecalho div#btnCadastrar a{
+    background-image: linear-gradient(to bottom,#f98b15,#fda546);
+    background-color: #f98b15;
+    text-decoration: none;
+    box-shadow: 1px 1px 4px black;
+    border: 2px solid #c98338;
+    border-radius: 25%;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    font-size: 11pt;
+    transition: border 0.1s;
+}
+header#hCabecalho div#cabecalho div#btnCadastrar a:active{
+    border: 0px groove #a96217;
+
+}/*Fim Botao Cadastrar---------------------*/
+
+/*Configuração fundo e tamanho do aside esquerdo*/
+aside#esquerdo {
+    background-image: linear-gradient(to right,green 50%,#5da83f);
+    background-color: green;
+    float: left;
+    width: 250px;
+}/*fim configuração fundo tamanho asidee esquerdo*/
+
+/*Configurações do menu lateral*/
+aside#esquerdo nav#menu {
+    background-color: #99d881;
+    display: block;
+    float: left;
+    width: 230px;
+    margin: 35px 10px 35px 10px;
+    padding-bottom: 0px;
+}
+aside#esquerdo nav#menu h1 {
+    display: none;
+}
+aside#esquerdo div#conteudoEsq nav#menu li#tituloMenu{
+    background-color: #f98b15 ;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+aside#esquerdo div#conteudoEsq nav#menu li{
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 2px;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+}
+aside#esquerdo div#conteudoEsq nav#menu a{
+    text-decoration: none;
+}/*Fim configurações do menu lateral*/
+/*Configurar aside direito com o ranking de usuario*/
+aside#direito {
+    background-image: linear-gradient(to right,#5da83f,green 50%);
+    background-color: green;
+    display: block;
+    float: right;
+    width: 220px;
+
+
+
+}
+aside#direito div#ranking{
+    background-color: #99d881;
+    display: block;
+    float: right;
+    width: 200px;
+    margin: 10px;
+}
+aside#direito div#ranking a {
+    text-decoration: none;
+}
+aside#direito div#ranking li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+}
+aside#direito div#ranking h1 {
+    background-color: #f98b15 ;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+.propDir{
+    display: block;
+    float: right;
+    border: 1px solid white;
+    width: 180px;
+    height: 150px;
+    margin-top: 15px;
+    margin-right: 10px;
+
+}
+
+section#conteudoPrincipal {
+    margin: 0px 230px 0px 260px;
+    padding: 10px;
+    background-color: #cbf9b9;
+    max-width: 820px;
+    min-width: 550px;
+
+}
+
+/*Configura o titulo, tamanho e tipo fonte  dos posts em destaques*/
+/*classe que cria a caixa verde dos posts em destaque*/
+.postsDestaque {
+    background-color: #78b660;
+    min-width: 400px;
+    max-width: 700px;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 25px;
+    margin-left: 130px;
+    margin-top: 15px;
+    border-radius: 25px;
+    border: 2px groove #5ba943;
+}
+
+
+section#conteudoPrincipal article#Destaques{
+    padding: 10px;
+    margin: 10px auto 10px auto;
+}
+/*titulos dos assuntos no conteudo prncipal*/
+section#conteudoPrincipal h1 {
+    background-color: rgb(154, 194, 138);
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+    padding: 5px 10px;
+}
+/*Titulo dos Posts destaques*/
+section#conteudoPrincipal article#Destaques h3{
+    text-align: center;
+    background-color: #f9b14e;
+    color: white;
+    padding: 4px 4px 4px 8px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    border: 3px groove #c98338;
+
+}
+/*Perguntas dos posts destaques*/
+section#conteudoPrincipal article#Destaques h4 {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    padding: 5px;
+    border-top: 4px ridge #5da83f;
+    border-bottom: 4px ridge #5da83f;
+
+}
+/*Conteudo da Pergunta*/
+section#conteudoPrincipal article#Destaques p {
+    background-color: #dcfec1;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 10px;
+    text-align: justify;
+
+
+}
+
+/*Classe que cria o tamanho e formatação das imgs representando materias*/
+.imgPeq{
+    background-color:#78b660 ;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    border: 2px groove #5ba943;
+}
+section#conteudoPrincipal article#Destaques div#imgInfo {
+    float: left;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 45px;
+
+}
+section#conteudoPrincipal article#Destaques div#imgMat {
+    float: left;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 35px;
+
+}
+section#conteudoPrincipal article#Destaques div#imgMin {
+    float: left;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 35px;
+
+}
+/*final config do artigo de posts destaques*/
+
+footer#rodape {
+    background-image: linear-gradient(to top,#5da83f,green 65%);
+    background-color: green;
+    box-shadow: -1px -5px 5px black;
+    float:left;
+    clear: both;
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+}

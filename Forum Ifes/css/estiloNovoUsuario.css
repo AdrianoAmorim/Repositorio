@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+.iBox{
+    border-radius: 8px;
+    padding-left: 5px;
+    height: 30px;
+}
+form#cadastroNovoMembro figure#fotoPerfil{
+    border: 2px double tan;
+    float: right;
+
+}
+form#cadastroNovoMembro fieldset#dadosUsuario {
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
+form#cadastroNovoMembro input#nome {
+    background-color: blanchedalmond;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    width: 250px;
+}
+form#cadastroNovoMembro input#apelido{
+    margin-bottom: 10px;
+    width: 250px;
+}
+form#cadastroNovoMembro input#email{
+    margin-bottom: 10px;
+    margin-left: 14px;
+    width: 250px;
+}
+form#cadastroNovoMembro input#senha{
+    margin-bottom: 10px;
+    margin-left: 11px;
+}
+
+form#cadastroNovoMembro input#btn_cadastrar{
+    width: 100px;
+    height: 40px;
+
+}
+

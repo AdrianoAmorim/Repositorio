@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+
+<head>
+<meta charset="UTF-8">
+    <title>Cadastro de Novo Membro</title>
+
+<link rel="stylesheet" href = "css/estiloPadrao.css">
+<link rel="stylesheet" href="css/estiloNovoUsuario.css">
+    <style>
+        header#hCabecalho div#cabecalho div#btnCadastrar {
+            display: block;
+            float: right;
+            padding: 0px;
+            margin-top: 20px;
+            margin-right: 37px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="interface">
+
+    <!--Cabeçalho da Pagina-->
+    <header id="hCabecalho">
+    <div id="cabecalho">
+
+        <div id="btnCadastrar">
+          <a href="#">CADASTRE-SE</a>
+        </div>
+
+    </div><!--fim do cabecalho-->
+    </header>
+<!--------------------------------------->
+<div id="centralConteudo">
+
+    <aside id="esquerdo">
+        <div id="conteudoEsq">
+            <nav id="menu">
+                <h1>MENU PRINCIPAL</h1>
+                <ul>
+                    <li id="tituloMenu">MENU</li>
+                    <li><a href="#">MINHA CONTA</a></li>
+                    <li><a href="#">MINHAS PERGUNTAS</a></li>
+                    <li><a href="#">GRUPOS</a></li>
+                    <li><a href="index.html">FORUM GERAL</a></li>
+                    <li><a href="#">CONTRIBUIR</a></li>
+                </ul>
+            </nav><!--Fechamento menu de navegacao-->
+
+        </div><!--Fechamento lateral esquerda-->
+    </aside>
+
+    <section id="conteudoPrincipal">
+        <h1>Cadastro - novo membro</h1>
+
+        <form id="cadastroNovoMembro">
+
+            <fieldset id="dadosUsuario"><legend>Dados do Usuário</legend>
+                <figure id="fotoPerfil">
+                    <img src="_imagens/img_areaInfo.png">
+                </figure>
+
+                <label for="nome" id="lNome">Nome </label>
+                <input type="text" name="tnome" id="nome" placeholder="Nome Completo" class="iBox"><br/>
+
+                <label for="apelido" id="lApelido">Usuário </label>
+                <input type="text" name="tapelido" id="apelido" placeholder="Apelido" class="iBox"><br/>
+
+                <label for="email" id="lEmail">Email </label>
+                <input type="email" name="temail" id="email" class="iBox"><br/>
+
+                <label for="senha" id="lSenha">Senha </label>
+                <input type="password" name="tSenha" id="senha" class="iBox">
+
+            </fieldset>
+
+            <input type="button" id="btn_cadastrar" value="Cadastrar">
+
+        </form>
+    </section>
+
+</div><!--Fechamento da div centralConteudo-->
+
+<footer id="rodape">
+    <p>RODAPE</p>
+</footer>
+
+</div><!-- Fechamento da Interface-->
+</body>
+</html>
