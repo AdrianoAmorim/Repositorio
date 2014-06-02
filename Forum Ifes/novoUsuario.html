@@ -65,20 +65,17 @@
                 </figure>
 
                 <label for="nome" id="lNome">Nome </label>
-                <input type="text" name="tnome" id="nome" placeholder="Nome Completo" class="iBox"><br/>
-
-                <label for="apelido" id="lApelido">Usuário </label>
-                <input type="text" name="tapelido" id="apelido" placeholder="Apelido" class="iBox"><br/>
+                <input type="text" name="tnome" id="nome" placeholder="Nome Completo" class="iBox" maxlength=51 required><br/>
 
                 <label for="email" id="lEmail">Email </label>
-                <input type="email" name="temail" id="email" class="iBox"><br/>
+                <input type="email" name="temail" id="email" class="iBox" placeholder="seunome@email.com.br" required><br/>
 
                 <label for="senha" id="lSenha">Senha </label>
-                <input type="password" name="tSenha" id="senha" class="iBox">
+                <input type="password" name="tSenha" id="senha" class="iBox" placeholder="************" maxlength=12 required>
 
             </fieldset>
 
-            <input type="button" id="btn_cadastrar" value="Cadastrar">
+	    <input type="submit" name="action" btn_cadastrar" value="Cadastrar">
 
         </form>
     </section>
