@@ -27,33 +27,33 @@
 
 
 body{
-
     background-color: #CAE1FF;
-    min-width: 550px;
+    min-width: 600px;
 }
 
-div#cabecalho {
+header#cabecalho {
     background-color: #d7d7d7 ;
     margin: 0px auto 0px auto ;
     width: auto;
-    height: auto;
-    min-height: 90px;
+    height: 50px;
+    min-height: 50px;
     max-height: 120px;
     box-shadow: 0px 2px 5px #414a5a;
 }
-div#cabecalho img#imgLogo {
+header#cabecalho img#imgLogo {
     float: left;
     top: 10px;
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
 }
 
-div#cabecalho h1#tituloPrincipal {
-
-    text-align: center;
+header#cabecalho h1#tituloPrincipal {
+    float: left;
+    padding-top: 15px ;
+    margin-left: -15px;
     color: #414a5a;
-    font-family:  Helvetica, Arial, sans-serif;
-    font-size: 25pt;
+    font-family:  Arial,monospace, serif;
+    font-size: 15pt;
 
 }
 
@@ -91,8 +91,4 @@ form#frmLogin input#btnEntrar {
     margin-right: 30px;
     border: 2px solid #414a5a;
     border-radius: 35px;
-}
-
-form#frmLogin input#inUsuario {
-
 }
