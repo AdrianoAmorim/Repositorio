@@ -4,15 +4,17 @@
     margin: 0px;
     padding: 0px;
 }
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
     background-color: #CAE1FF;
     width: 100%;
-
+    min-width: 980px;
 }
 
-div#conteudo {
-
-}
 header#cabecalho {
     background-color: #d7d7d7 ;
     margin: 0px auto 15px auto ;
@@ -40,18 +42,17 @@ header#cabecalho h1#tituloPrincipal {
 
 }
 
-aside#asEsquerdo {
-    float: left;
-    margin-top: 50px;
-    width: 110px;
-}
-section#scCadastroPit{
-    margin-top: 50px;
-    margin-left: 130px;
-    background-color: beige ;
-    width: 100%;
 
+#container {
+    background-color: #414a5a;
+    width: 980px;
+    height: 500px;
+    margin: 20px auto 0 auto;
 }
+
+
+
+
 footer#rodape {
     border-top: 2px solid #414a5a;
     clear: both;

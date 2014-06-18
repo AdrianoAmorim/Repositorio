@@ -12,26 +12,22 @@
     <h1 id="tituloPrincipal">PIT - PLANO INDIVIDUAL DE TRABALHO</h1>
 </header>
 
-<div id="conteudo">
-
-    <aside id="asEsquerdo">
-        <h3>SEMESTRES</h3>
-    </aside>
+<div id="container">
 
     <section id="scCadastroPit">
-        <div id="infoDocente">
-            <h3>Professor: </h3>
-        </div>
 
-        <form name="frmCadastroPit" id="frmCadastroPit">
-            <input type="text" name="inUsuario" id="usuario" placeholder="SIAPE" autofocus required></br>
 
-            <input type="password" name="inSenha" id="senha" placeholder="PASSWORD" required></br>
-
-            <input type="submit" id="btnEntrar" value="Entrar">
-        </form>
     </section>
+
+
 </div>
+
+
+
+
+
+
+
 
 <footer id="rodape">
     <p>rodape</p>
