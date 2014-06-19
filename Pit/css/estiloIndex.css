@@ -9,12 +9,36 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+/*Classes ---------------------------------------------------------------------*/
+.camposDados{
+    float: right;
+    width: 100%;
+    padding: 10px;
+    margin-top: 35px;
+}
+.tituloCamposDados {
+    text-align: center;
+    color: white;
+}
+.radios{
+    margin-right: 10px;
+}
+.lblRadios{
+    margin-right: 5px;
+}
+.clear {
+    clear: both;
+}
+/*fim classes---------------------------------------------------*/
+
 body{
     background-color: #CAE1FF;
     width: 100%;
     min-width: 980px;
 }
 
+/*Estilização do cabecalho*/
 header#cabecalho {
     background-color: #d7d7d7 ;
     margin: 0px auto 15px auto ;
@@ -41,16 +65,68 @@ header#cabecalho h1#tituloPrincipal {
     font-size: 15pt;
 
 }
+/*-------------------------------------------------------------*/
 
-
-#container {
+div#container {
+    position: relative;
     background-color: #414a5a;
     width: 980px;
     height: 500px;
-    margin: 20px auto 0 auto;
+    margin: 60px auto 10px auto;
 }
 
+/*Cabecalho do formulario*/
+div#container header#cabecalhoPit {
+    position: absolute;
+    background-color: #d7d7d7 ;
+    width: 100%;
+    height: 60px;
+}
+/*titulo do cabecalho cadastro*/
+div#container header#cabecalhoPit h2{
+    text-align: center;
+    margin-top: 15px;
+}
+/*----------------------------------------------------------*/
 
+/*Estilo do select dos Semestres*/
+div#container header#cabecalhoPit select#selectSemestres {
+    position: absolute;
+    top: 32px;
+    left: 10px;
+}
+/*-------------------------------------------------------------*/
+
+/*Label do select do Semestre*/
+div#container header#cabecalhoPit label#lblSelect {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+/*-------------------------------------------------------------*/
+
+/*fim cabecalho do formulario*/
+
+
+div#container section#scCadastroPit h3#nomeProf {
+    float: left;
+    color: white;
+}
+
+div#container section#scCadastroPit p#numSiape {
+    float: right;
+    color: white;
+
+}
+
+div#container section#scCadastroPit fieldset#regimeTrabalho{
+    float: right;
+    width: 220px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+
+}
 
 
 footer#rodape {
