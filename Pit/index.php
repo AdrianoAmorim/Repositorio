@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+include("./php/Conexao.php");
+$con = new Conexao();
+$con->conectar($_POST['inUsuario'],$_POST['inSenha']);
+?>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -6,7 +11,6 @@
     <title>PIT - CADASTRO</title>
 </head>
 <body>
-
 <header id="cabecalho">
     <img src="_imagens/img_logo.png" id="imgLogo"/>
     <h1 id="tituloPrincipal">PIT - PLANO INDIVIDUAL DE TRABALHO</h1>
