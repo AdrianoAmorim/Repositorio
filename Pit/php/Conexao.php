@@ -11,9 +11,7 @@ class Conexao {
 		} catch (PDOException $erro_con) {
 			header("Location: login.php");
 		}
-		if ($con) {
-			setcookie("sessao", md5($user), time() + 1800);
-		}
+
 	}
 
 }

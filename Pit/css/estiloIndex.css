@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+textarea {
+    resize: none;
+    margin-top: 15px;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -9,13 +13,18 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+/*Gambiarra para Primeiro campo info do professor margin top diferenciada*/
+div#container section#scCadastroPit form#frmPit fieldset#camposDados1 {
+    margin-top: 75px;
+}
 
 /*Classes ---------------------------------------------------------------------*/
 .camposDados{
-    float: right;
+    float: left;
     width: 100%;
     padding: 10px;
-    margin-top: 35px;
+    margin-top: 15px;
+
 }
 .tituloCamposDados {
     text-align: center;
@@ -49,30 +58,33 @@ header#cabecalho {
     box-shadow: 0px 2px 5px #414a5a;
 }
 header#cabecalho img#imgLogo {
-    position: absolute;
-    top: 5px;
-    width: 150px;
+    float: left;
+    width:150px;
     height: 100px;
-    margin-bottom: 10px;
 
 }
 header#cabecalho h1#tituloPrincipal {
     float: left;
     padding-top: 10px;
-    margin-left: 160px;
+    margin-left: 0px;
     color: #414a5a;
     font-family:  Arial,monospace, serif;
     font-size: 15pt;
 
 }
-/*-------------------------------------------------------------*/
 
+/*-------------------------------------------------------------*/
+/*estilo da div que contem todo o conteudo ate o cabecalho*/
 div#container {
     position: relative;
     background-color: #414a5a;
     width: 980px;
-    height: 500px;
+    height: auto;
     margin: 60px auto 10px auto;
+}
+/*estilo de toda a secao do form*/
+section#scCadastroPit {
+    padding: 10px;
 }
 
 /*Cabecalho do formulario*/
@@ -86,6 +98,7 @@ div#container header#cabecalhoPit {
 div#container header#cabecalhoPit h2{
     text-align: center;
     margin-top: 15px;
+    font-size: 15pt;
 }
 /*----------------------------------------------------------*/
 
@@ -108,7 +121,7 @@ div#container header#cabecalhoPit label#lblSelect {
 /*fim cabecalho do formulario*/
 
 
-div#container section#scCadastroPit h3#nomeProf {
+div#container section#scCadastroPit p#nomeProf {
     float: left;
     color: white;
 }
@@ -119,7 +132,7 @@ div#container section#scCadastroPit p#numSiape {
 
 }
 
-div#container section#scCadastroPit fieldset#regimeTrabalho{
+div#container section#scCadastroPit form#frmPit fieldset#regimeTrabalho{
     float: right;
     width: 220px;
     padding: 10px;
@@ -128,6 +141,20 @@ div#container section#scCadastroPit fieldset#regimeTrabalho{
 
 }
 
+div#container section#scCadastroPit form#frmPit div#componentesCurriculares {
+    float: left;
+    margin: 10px;
+}
+
+div#container section#scCadastroPit form#frmPit div#coordenadoria {
+    float: left;
+    margin: 10px;
+}
+
+div#container section#scCadastroPit form#frmPit div#numAulas {
+    float: left;
+
+}
 
 footer#rodape {
     border-top: 2px solid #414a5a;

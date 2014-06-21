@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="pt-br">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/estiloLogin.css">
     <title>Pagina Principal - PIT</title>
 </head>
 
 <body>
+
 <header id="cabecalho">
     <img src="_imagens/img_logo.png" id="imgLogo"/>
     <h1 id="tituloPrincipal">PIT - PLANO INDIVIDUAL DE TRABALHO</h1>
@@ -19,7 +20,7 @@
 
             <input type="password" name="inSenha" id="senha" class="camposInput" placeholder="PASSWORD" required></br>
 
-           <input type="submit" id="btnEntrar" value="Entrar">
+            <input type="submit" id="btnEntrar" value="Entrar">
         </form>
 
 </body>

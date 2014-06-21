@@ -4,8 +4,9 @@ include("./php/Conexao.php");
 $con = new Conexao();
 $con->conectar($_POST['inUsuario'],$_POST['inSenha']);
 ?>
+
 <html>
-<head lang="en">
+<head lang="pt-br">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/estiloIndex.css"/>
     <title>PIT - CADASTRO</title>
@@ -32,28 +33,56 @@ $con->conectar($_POST['inUsuario'],$_POST['inSenha']);
         <h2>CADASTRO - PIT</h2>
     </header>
 
-    <section id="scCadastroPit" class="camposDados">
-        <fieldset class="camposDados"><legend class="tituloCamposDados">Informações do Professor</legend>
-            <h3 id="nomeProf">Nome: Eros Moura</h3>
-            <p id="numSiape">SIAPE: 01245</p>
+    <section id="scCadastroPit">
+        <form name="frmPit" id="frmPit" method="post">
+            <fieldset class="camposDados" id="camposDados1"><legend class="tituloCamposDados">Informações do Professor</legend>
+                <p id="nomeProf">Nome: Eros Moura</p>
+                <p id="numSiape">SIAPE: 01245</p>
 
-            <div class="clear"></div>
+                <div class="clear"></div>
 
-            <fieldset id="regimeTrabalho"><legend class="tituloCamposDados">Regime de Trabalho</legend>
-                <label for="20" class="lblRadios">20H</label>
-                <input type="radio" name="horasTrab" id="20" class="radios" required>
+                <fieldset id="regimeTrabalho"><legend class="tituloCamposDados">Regime de Trabalho</legend>
+                    <label for="20" class="lblRadios">20H</label>
+                    <input type="radio" name="horasTrab" id="20" class="radios" required>
 
-                <label for="40" class="lblRadios">40H</label>
-                <input type="radio" name="horasTrab" id="40" class="radios" required>
+                    <label for="40" class="lblRadios">40H</label>
+                    <input type="radio" name="horasTrab" id="40" class="radios" required>
 
-                <label for="DE" class="lblRadios">DE</label>
-                <input type="radio" name="horasTrab" id="DE" class="radios" required>
+                    <label for="DE" class="lblRadios">DE</label>
+                    <input type="radio" name="horasTrab" id="DE" class="radios" required>
+                </fieldset>
             </fieldset>
 
-        </fieldset>
+            <fieldset class="camposDados"><legend class="tituloCamposDados">Atividades de Ensino</legend>
+                <div id="componentesCurriculares">
+                    <h4 id="tituloComponetesC">Componentes Curriculares</h4>
+                        <input type="text" name="componenteCurricular" class="inDados"><br/>
+                        <input type="text" name="componenteCurricular" class="inDados">
+                </div>
 
+                <div id="coordenadoria">
+                    <h4 id="tituloCoordenadoria">Coordenadoria</h4>
+                        <input type="text" name="coordenadoria" class="inDados"><br/>
+                        <input type="text" name="coordenadoria" class="inDados">
+                </div>
 
+                <div id="numAulas">
+                    <h4 id="tituloNumAulas">Nº de Aulas</h4>
+                        <input type="text" name="qtdAulas" class="inDados"><br/>
+                        <input type="text" name="qtdAulas" class="inDados">
+                </div>
+            </fieldset>
 
+            <fieldset class="camposDados"><legend class="tituloCamposDados">Atendimento ao Aluno</legend>
+
+            </fieldset>
+
+            <fieldset class="camposDados"><legend class="tituloCamposDados">Outras Ativdades no Ifes</legend>
+
+            </fieldset>
+
+            <textarea name="taObservacoes" cols="45" rows="5" maxlength="254" placeholder="Digite as Observações"  ></textarea>
+        </form>
     </section>
 
 
