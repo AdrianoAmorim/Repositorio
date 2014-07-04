@@ -19,6 +19,9 @@ div#container section#scCadastroPit form#frmPit fieldset#camposDados1 {
 }
 
 /*Classes ---------------------------------------------------------------------*/
+.inDados{
+    margin: 5px;
+}
 .camposDados{
     float: left;
     width: 100%;
@@ -137,22 +140,29 @@ div#container section#scCadastroPit form#frmPit fieldset#regimeTrabalho{
     width: 220px;
     padding: 10px;
     text-align: center;
-    color: white;
+    color: black;
 
 }
 
 div#container section#scCadastroPit form#frmPit div#componentesCurriculares {
+    text-align: center;
     float: left;
     margin: 10px;
+    border: 2px solid white;
 }
 
 div#container section#scCadastroPit form#frmPit div#coordenadoria {
+    text-align: center;
     float: left;
     margin: 10px;
+    border: 2px solid white;
 }
 
 div#container section#scCadastroPit form#frmPit div#numAulas {
-    float: left;
+    text-align: center;
+    float: right;
+    margin: 10px;
+    border: 2px solid white;
 
 }
 

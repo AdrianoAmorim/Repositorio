@@ -9,6 +9,7 @@ $con->conectar($_POST['inUsuario'],$_POST['inSenha']);
 <head lang="pt-br">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/estiloIndex.css"/>
+    <script src="js/teste.js"></script>
     <title>PIT - CADASTRO</title>
 </head>
 <body>
@@ -25,8 +26,10 @@ $con->conectar($_POST['inUsuario'],$_POST['inSenha']);
             <optgroup label="2014">
                 <option value="1º Semestre">1º Semestre</option>
                 <option value="2º Semestre">2º Semestre</option>
-                <option value="3º Semestre">3º Semestre</option>
-                <option value="4º Semestre">4º Semestre</option>
+            </optgroup>
+            <optgroup label="2015">
+                <option value="1º Semestre">1º Semestre</option>
+                <option value="2º Semestre">2º Semestre</option>
             </optgroup>
         </select>
 
@@ -55,22 +58,24 @@ $con->conectar($_POST['inUsuario'],$_POST['inSenha']);
 
             <fieldset class="camposDados"><legend class="tituloCamposDados">Atividades de Ensino</legend>
                 <div id="componentesCurriculares">
-                    <h4 id="tituloComponetesC">Componentes Curriculares</h4>
+                    <label for="componenteCurricular" id="lblCompCurr">Componente Curricular</label><br/>
                         <input type="text" name="componenteCurricular" class="inDados"><br/>
                         <input type="text" name="componenteCurricular" class="inDados">
                 </div>
 
                 <div id="coordenadoria">
-                    <h4 id="tituloCoordenadoria">Coordenadoria</h4>
+                    <label for="coordenadoria" id="tituloCoordenadoria">Coordenadoria</label><br/>
                         <input type="text" name="coordenadoria" class="inDados"><br/>
                         <input type="text" name="coordenadoria" class="inDados">
                 </div>
 
                 <div id="numAulas">
-                    <h4 id="tituloNumAulas">Nº de Aulas</h4>
+                    <label for="qtdAulas" id="tituloNumAulas">Nº de Aulas</label><br/>
                         <input type="text" name="qtdAulas" class="inDados"><br/>
                         <input type="text" name="qtdAulas" class="inDados">
                 </div>
+
+
             </fieldset>
 
             <fieldset class="camposDados"><legend class="tituloCamposDados">Atendimento ao Aluno</legend>
