@@ -74,8 +74,8 @@ $con->conectar($_POST['inUsuario'],$_POST['inSenha']);
                         <input type="text" name="qtdAulas" class="inDados"><br/>
                         <input type="text" name="qtdAulas" class="inDados">
                 </div>
-
-
+                    <div class="clear"></div>
+                <input type="button" onclick="" value="+" id="btnAddCampo" title="Adicionar Nova Atividade"></button>
             </fieldset>
 
             <fieldset class="camposDados"><legend class="tituloCamposDados">Atendimento ao Aluno</legend>
@@ -89,8 +89,6 @@ $con->conectar($_POST['inUsuario'],$_POST['inSenha']);
             <textarea name="taObservacoes" cols="45" rows="5" maxlength="254" placeholder="Digite as Observações"  ></textarea>
         </form>
     </section>
-
-
 
 </div>
 
