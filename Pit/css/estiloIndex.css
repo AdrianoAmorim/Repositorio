@@ -42,6 +42,17 @@ div#container section#scCadastroPit form#frmPit fieldset#camposDados1 {
 .clear {
     clear: both;
 }
+.btnAddCampo{
+    width: 45px;
+    height:30px ;
+    background-color: cadetblue;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 18pt;
+    text-shadow: 2px 1px 2px black;
+    border: 2px outset rgb(134, 223, 225);
+}
 /*fim classes---------------------------------------------------*/
 
 body{
@@ -170,20 +181,11 @@ div#container section#scCadastroPit form#frmPit div#numAulas {
 div#container section#scCadastroPit form#frmPit input#btnAddCampo {
     float: right;
     margin: 10px;
-    width: 45px;
-    height:30px ;
-    background-color: cadetblue;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
-    font-size: 18pt;
-    text-shadow: 2px 1px 2px black;
-    border: 2px outset rgb(134, 223, 225);
-
 }
 
 footer#rodape {
-    border-top: 2px solid #414a5a;
+    background-color: #d7d7d7;
+    box-shadow: 2px 0px 5px #414a5a;
     clear: both;
     width: auto;
     height: 50px;
